@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="20dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/realTimeList_profile"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/withList_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:ellipsize="end"
+        android:text="제목"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/realTimeList_profile"
+        app:layout_constraintTop_toTopOf="@+id/realTimeList_profile" />
+
+    <TextView
+        android:id="@+id/withList_hostName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="강와글"
+        android:textColor="#6C6C6C"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/realTimeList_profile"
+        app:layout_constraintStart_toStartOf="@+id/withList_title"
+        app:layout_constraintTop_toBottomOf="@+id/withList_title" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/withList_hostName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/withList_hostName">
+
+
+        <TextView
+            android:id="@+id/with_count_personnel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#ff6400"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textColor="#ff6400"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/with_count_personnel"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/with_personnel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#ff6400"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView12"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="(명)"
+            android:textColor="#ff6400"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/with_personnel"
+            app:layout_constraintStart_toEndOf="@+id/with_personnel"
+            app:layout_constraintTop_toTopOf="@+id/with_personnel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/realTimeList_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="몇분전"
+        android:textColor="#6C6C6C"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/withList_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/withList_title" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

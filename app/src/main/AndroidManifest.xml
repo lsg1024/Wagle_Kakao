@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wagle.kakao_app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name=".MyPage.kakaoAPI.GlobalApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Kakao_App"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".GusetBookModul.SearchPage.detail_images"
+            android:exported="false" />
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="fullSensor"
+            tools:replace="screenOrientation" />
+        <activity
+            android:name=".Pair.QR_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".declaration_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".With.OtherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Home.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MyPage.list.MyGuestBook.MyProfile_update"
+            android:exported="false" />
+        <activity
+            android:name=".MyPage.list.MyProfile_insert"
+            android:exported="false" />
+        <activity
+            android:name=".With.newWrite_WithActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".With.ComingsoonListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".With.Wtih_postDetailHost_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MyPage.list.MyGuestbook"
+            android:exported="false" />
+        <activity
+            android:name=".MyPage.list.MyStorybook"
+            android:exported="false" />
+        <activity
+            android:name=".Pair.shareImageMore"
+            android:exported="false" />
+        <activity
+            android:name=".Alarm.AlarmList"
+            android:exported="false" />
+        <activity
+            android:name=".Pair.Pair_MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Chatting.ChattingRoom"
+            android:exported="false" />
+        <activity
+            android:name=".Chatting.ChattingList"
+            android:exported="false" />
+        <activity
+            android:name=".With.With_searchPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".With.With_postDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".With.RealtimeList"
+            android:exported="false" /> <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <activity
+            android:name=".GusetBookModul.SearchPage.create_commet"
+            android:exported="false" />
+        <activity
+            android:name=".GusetBookModul.Create_place"
+            android:exported="false" />
+        <activity
+            android:name=".GuestBook.SearchPackage.ImageClick_Actitivty"
+            android:exported="false" />
+        <activity
+            android:name=".GuestBook.SearchPackage.SearchActivity"
+            android:exported="false"
+            android:label="@string/title_activity_search"
+            android:theme="@style/Theme.Kakao_App.NoActionBar" />
+        <activity
+            android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="oauth"
+                    android:scheme="" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="" />
+    </application>
+
+</manifest>

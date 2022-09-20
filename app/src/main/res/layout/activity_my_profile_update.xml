@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="&lt;"
+            android:textSize="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="개인정보 수정"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#eee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout1" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view10">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center_vertical"
+            android:text="닉네임"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/input_nickname"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/light_gray"
+            android:hint="김와글"
+            app:layout_constraintBottom_toBottomOf="@+id/textView1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView1"
+            app:layout_constraintTop_toTopOf="@+id/textView1" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/textView30"-->
+        <!--            android:layout_width="60dp"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:gravity="center_vertical"-->
+        <!--            android:text="성별"-->
+        <!--            android:textColor="#000000"-->
+        <!--            android:textSize="20dp"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/textView1" />-->
+
+
+        <!--        <RadioGroup-->
+        <!--            android:id="@+id/radio_group_sex"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            android:layout_marginLeft="20dp"-->
+        <!--            android:backgroundTint="@color/light_gray"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            app:layout_constraintBottom_toBottomOf="@+id/textView30"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toEndOf="@+id/textView30"-->
+        <!--            app:layout_constraintTop_toTopOf="@+id/textView30">-->
+
+        <!--            <RadioButton-->
+        <!--                android:id="@+id/radio_male"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginRight="20dp"-->
+        <!--                android:text="남" />-->
+
+        <!--            <RadioButton-->
+        <!--                android:id="@+id/radio_female"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="여" />-->
+        <!--        </RadioGroup>-->
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:text="태그"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+        <EditText
+            android:id="@+id/input_tag"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/light_gray"
+            android:hint="#제주도 #맛집 #바다"
+            app:layout_constraintBottom_toBottomOf="@+id/textView31"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView31"
+            app:layout_constraintTop_toTopOf="@+id/textView31" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:text="MBTI"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+
+        <EditText
+            android:id="@+id/input_mbti"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/light_gray"
+            android:hint="INTP"
+            app:layout_constraintBottom_toBottomOf="@+id/textView32"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView32"
+            app:layout_constraintTop_toTopOf="@+id/textView32" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:text="소개"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+        <EditText
+            android:id="@+id/input_intro"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/intro_box"
+            android:gravity="top"
+            android:hint="여행을 좋아하는 김와글 입니다 ~^^"
+            android:padding="5dp"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView34"
+            app:layout_constraintTop_toTopOf="@+id/textView34" />
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/btn_rounded_rectangle"
+            android:backgroundTint="@color/orange"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="수정하기"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_intro" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

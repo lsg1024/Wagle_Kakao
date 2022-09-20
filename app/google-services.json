@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "243787479515",
+    "project_id": "wagle-be075",
+    "storage_bucket": "wagle-be075.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243787479515:android:175e9c145109a61677cffe",
+        "android_client_info": {
+          "package_name": "com.wagle.kakao_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243787479515-46jti0r09g4vros6vqjgdru6lu8k2qfj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpSPW6zWxPKzKvfHKsVi0VYe_ZRweQ83w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243787479515-46jti0r09g4vros6vqjgdru6lu8k2qfj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

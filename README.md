@@ -8,3 +8,5 @@ UIT-LAB
 android 임재성, 강나겸
 
 server 김나경, 김연정 
+
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/92419747/193579832-a1f0531e-667e-42cd-9a5d-cbda0b3e0dba.png">

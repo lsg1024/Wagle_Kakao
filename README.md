@@ -12,11 +12,7 @@ UIT-LAB
 
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/92419747/193579950-e0264bd2-33ae-4ab4-aa2d-10cac621a143.png">
 
-1. 검색기능 완성
-2. 업로드 글 작성 완성
-
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/92419747/193579984-bb933e34-79e2-4fa4-ab9d-cb0a1741a32d.png">
-
 
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/92419747/193580018-a05a08a6-a552-4949-a43e-b84df33ecb5a.png">
 
